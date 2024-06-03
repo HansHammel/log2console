@@ -42,9 +42,9 @@ namespace SerilogTest
         {
             Log.Logger = new LoggerConfiguration()
                 .MinimumLevel.Verbose()
-                .WriteTo.RollingFile(new JsonFormatter(), "log-{Date}.txt", retainedFileCountLimit: 2, buffered: true,
+                .WriteTo.File(new JsonFormatter(), "log-{Date}.txt", retainedFileCountLimit: 2, buffered: true,
                     flushToDiskInterval: TimeSpan.FromSeconds(5))
-                .WriteTo.LiterateConsole()
+                .WriteTo.Console()
                 //.WriteTo.Udp(IPAddress.Loopback, 7071)
                 .WriteTo.UDPSink(IPAddress.Loopback, 1337)
                 .CreateLogger();

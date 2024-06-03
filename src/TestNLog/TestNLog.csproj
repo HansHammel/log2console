@@ -1,13 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net472</TargetFramework>
+    <TargetFramework>net481</TargetFramework>
     <Configurations>Debug;Release</Configurations>
     <OutputType>Exe</OutputType>
     <Version>1.0.1</Version>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="log4net" Version="2.0.12" />
-    <PackageReference Include="NLog" Version="4.7.7" />
+    <PackageReference Include="log4net" Version="2.0.17" />
+    <PackageReference Include="NLog" Version="5.3.2" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
